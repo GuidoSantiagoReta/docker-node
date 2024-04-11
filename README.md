@@ -17,6 +17,7 @@ docker build -t your-image-name .
 ```
 docker run -p 3002:3002 your-image-name
 ```
+![dockerpuerto](https://github.com/GuidoSantiagoReta/docker-node/assets/46303885/51b39fad-4f50-461a-914a-92816d154831)
 
 ## Detener el contenedor que está utilizando el puerto:
 
@@ -38,3 +39,4 @@ docker push your-dockerhub-username/your-image-name
 ```
 Reemplaza your-dockerhub-username/your-image-name con tu nombre de usuario de Docker Hub y el nombre de tu imagen.
 
+![dockerhub](https://github.com/GuidoSantiagoReta/docker-node/assets/46303885/b96a265c-509c-44c2-962c-24d09431e8eb)
