@@ -17,6 +17,8 @@ docker build -t your-image-name .
 ```
 docker run -p 3000:3000 your-image-name
 ```
+![dockerpuerto](https://github.com/GuidoSantiagoReta/docker-node-AWS-EC2/assets/46303885/4bff3d6d-994b-4a25-bdb5-c28c63ae451f)
+
 # Detener el contenedor que está utilizando el puerto:
 
 - listar contenedores en ejecución
