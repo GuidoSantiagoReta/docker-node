@@ -1,10 +1,24 @@
-- name: Execute Docker commands
-  uses: appleboy/ssh-action@master
-  with:
-     host: ${{ secrets.EC2_PUBLIC_IP }}
-     username: ec2-user
-     key: ${{ secrets.EC2_SSH_KEY }}
-     script: |
-       docker pull dockernode
-       docker run -d -p 3002:3002 dockernode
+name: Execute Docker commands
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Execute Docker commands
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_PUBLIC_IP }}
+          username: ec2-user
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker pull dockernode
+            docker run -d -p 3002:3002 dockernode
 
