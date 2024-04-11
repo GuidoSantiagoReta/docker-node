@@ -1,6 +1,6 @@
- name: Execute Docker commands
- uses: appleboy/ssh-action@master
- with:
+- name: Execute Docker commands
+  uses: appleboy/ssh-action@master
+   with:
     host: ${{ secrets.EC2_PUBLIC_IP }}
     username: ec2-user
     key: ${{ secrets.EC2_SSH_KEY }}
