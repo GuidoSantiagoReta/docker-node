@@ -1,19 +1,19 @@
 name: Execute Docker commands
 
 on:
-  push:
+ push:
     branches:
       - main
 
 jobs:
-  deploy:
+ deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: appleboy/ssh-action@v1.0.3
+        uses: actions/checkout@v2
 
       - name: Execute Docker commands
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.9
         with:
           host: ${{ secrets.EC2_PUBLIC_IP }}
           username: ${{ secrets.GH_TOKEN }}
