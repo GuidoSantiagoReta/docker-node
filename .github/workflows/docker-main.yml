@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: appleboy/ssh-action@v1.0.3
 
       - name: Execute Docker commands
         uses: appleboy/ssh-action@master
