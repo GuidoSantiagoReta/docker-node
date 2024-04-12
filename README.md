@@ -40,7 +40,7 @@ Reemplaza your-dockerhub-username/your-image-name con tu nombre de usuario de Do
 
 # PARA REALIZAR LO DE DOCKER, TERRAFORMY EC2 ( ACORDARSE QUE YA ESTA LA IMAGEN CREADA dockernode corriendo en el puerto 3002 y subida a dockerhub)
 
-## Para cumplir con los requisitos de tu tarea, necesitarás seguir una serie de pasos que involucran la configuración de GitHub Actions para automatizar el proceso de CI/CD, incluyendo la generación de una imagen Docker, su subida a DockerHub, y el despliegue manual en tu instancia EC2. Aquí te dejo una guía paso a paso:
+## Para cumplir con los requisitos de tu tarea, necesitarás seguir una serie de pasos que involucran la configuración de GitHub Actions para automatizar el proceso de CI/CD, incluyendo la generación de una imagen Docker, su subida a DockerHub, y el despliegue manual en tu instancia EC2. Aquí te dejo una guía paso a paso: seguir pasos 
 
 1. Generar un PAT (Personal Access Token) en GitHub
 Ve a la configuración de tu cuenta de GitHub.
