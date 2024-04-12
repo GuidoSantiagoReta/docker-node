@@ -38,5 +38,5 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y docker.io
           docker pull guidosantiagoreta/dockernode:latest
-          docker run -d -p 3002:3022 guidosantiagoreta/dockernode:latest
+          docker run -d -p 3002:3002 guidosantiagoreta/dockernode:latest
 
