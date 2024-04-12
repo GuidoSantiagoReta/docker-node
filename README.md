@@ -38,7 +38,7 @@ docker push your-dockerhub-username/your-image-name
 ```
 Reemplaza your-dockerhub-username/your-image-name con tu nombre de usuario de Docker Hub y el nombre de tu imagen.
 
-# PARA REALIZAR LO DE DOCKER ,TERRAFORMY EC2 ( ACORDARSE QUE YA ESTA LA IMAGEN CREADA dockernode corriendo en el puerto 3002 y subida a dockerhub)
+# PARA REALIZAR LO DE DOCKER, TERRAFORMY EC2 ( ACORDARSE QUE YA ESTA LA IMAGEN CREADA dockernode corriendo en el puerto 3002 y subida a dockerhub)
 
 ## Para cumplir con los requisitos de tu tarea, necesitarás seguir una serie de pasos que involucran la configuración de GitHub Actions para automatizar el proceso de CI/CD, incluyendo la generación de una imagen Docker, su subida a DockerHub, y el despliegue manual en tu instancia EC2. Aquí te dejo una guía paso a paso:
 
@@ -52,7 +52,7 @@ En tu repositorio de GitHub, ve a "Settings" > "Secrets".
 Crea un nuevo secret, por ejemplo, GH_PAT, y pega el token que generaste en el paso anterior.
 3. Crear el CI Pipeline con GitHub Actions
 Para crear el CI Pipeline, necesitarás definir un archivo de workflow en tu repositorio. Este archivo debe estar ubicado en 
-.github/workflows/. Aquí te dejo un ejemplo de cómo podría verse este archivo, adaptado a tus necesidades:
+.github/workflows/. 
 
 ```
 name: CI/CD Pipeline
@@ -107,7 +107,7 @@ DOCKERHUB_TOKEN: Tu token de acceso de DockerHub.
 EC2_HOST: La dirección IP pública de tu instancia EC2.
 EC2_USERNAME: El nombre de usuario para acceder a tu instancia EC2 (por ejemplo, ubuntu).
 EC2_SSH_KEY: La clave privada SSH para acceder a tu instancia EC2.
+
 5. Despliegue Manual
 Para asegurar que el despliegue sea manual, puedes configurar el workflow para que se ejecute solo cuando se activa manualmente. Esto se puede hacer utilizando el evento workflow_dispatch en lugar de push en la sección on de tu archivo de workflow.
 
-Recuerda que este es un ejemplo básico y puede necesitar ajustes según tu configuración específica y los requisitos de tu proyecto.
