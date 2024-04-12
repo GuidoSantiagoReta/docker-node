@@ -22,7 +22,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: guidosantiagoreta/dockernode:${{ github.sha }}
+        tags: guidosantiagoreta/dockernode:latest
 
  deploy:
     runs-on: ubuntu-latest
@@ -37,6 +37,6 @@ jobs:
         script: |
           sudo apt-get update
           sudo apt-get install -y docker.io
-          docker pull guidosantiagoreta/dockernode:${{ github.sha }}
-          docker run -d -p 3002:3022 guidosantiagoreta/dockernode:${{ github.sha }}
+          docker pull guidosantiagoreta/dockernode:latest
+          docker run -d -p 3002:3022 guidosantiagoreta/dockernode:latest
 
