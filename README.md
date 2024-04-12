@@ -111,3 +111,7 @@ EC2_SSH_KEY: La clave privada SSH para acceder a tu instancia EC2.
 5. Despliegue Manual
 Para asegurar que el despliegue sea manual, puedes configurar el workflow para que se ejecute solo cuando se activa manualmente. Esto se puede hacer utilizando el evento workflow_dispatch en lugar de push en la sección on de tu archivo de workflow.
 
+
+
+## ya tengo todas las secrets cargadas. ahora se viene el paso de levantar la instancia y crear el pipeline.
+
