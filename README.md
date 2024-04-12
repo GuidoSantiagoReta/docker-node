@@ -115,3 +115,9 @@ Para asegurar que el despliegue sea manual, puedes configurar el workflow para q
 
 ## ya tengo todas las secrets cargadas. ahora se viene el paso de levantar la instancia y crear el pipeline.
 
+### se agrega   permisos a la instancia para ejecutar docker
+
+```
+sudo usermod -aG docker guidosantiagoreta
+
+```
