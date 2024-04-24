@@ -2,7 +2,7 @@
 - Servidor con node y expres escuchando en el puerto 3002
 
 ## DOCKERFILE E IMAGEN
-- crear dockerfile
+- crear Dockerfile
 
 ## CREAR IMAGEN DOCKER 
 
